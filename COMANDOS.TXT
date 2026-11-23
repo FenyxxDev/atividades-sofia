@@ -1,0 +1,20 @@
+COMANDOS PARA EXECUTAR O PROGRAMA
+=================================
+
+Requisito: compilador GCC instalado (Linux, macOS, ou Windows com MinGW/WSL).
+
+1) Clonar o repositorio:
+   git clone <LINK_DO_SEU_REPOSITORIO>
+   cd <NOME_DA_PASTA>
+
+2) Compilar:
+   gcc -Wall -o streaming streaming.c
+
+3) Executar:
+   Linux / macOS / WSL:   ./streaming
+   Windows (cmd):         streaming.exe
+
+Observacoes:
+- Os arquivos videos.bin e usuarios.bin sao criados automaticamente
+  na pasta onde o programa for executado, ao cadastrar o primeiro registro.
+- Para comecar com os dados zerados, apague videos.bin e usuarios.bin.

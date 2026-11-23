@@ -1,20 +1,36 @@
-COMANDOS PARA EXECUTAR O PROGRAMA
+COMANDOS PARA COMPILAR E EXECUTAR
 =================================
 
-Requisito: compilador GCC instalado (Linux, macOS, ou Windows com MinGW/WSL).
+Requisito: GCC instalado (Linux, macOS, Windows com MinGW ou WSL).
 
-1) Clonar o repositorio:
-   git clone https://ubiquitous-waffle-5wq75xqrg9vcp4p.github.dev/
+1) Clonar o repositório:
+   git clone https://github.com/FenyxxDev/atividades-sofia.git
+
+2) Entrar na pasta do projeto:
    cd atividades-sofia
 
-2) Compilar:
-   gcc -Wall -o streaming streaming.c
+3) Compilar o código-fonte:
+   gcc -std=c11 -Wall -Wextra -pedantic ATIVIDADE_ARQUIVOS.c -o streaming
 
-3) Executar:
-   Linux / macOS / WSL:   ./streaming
-   Windows (cmd):         streaming.exe
+4) Executar:
 
-Observacoes:
-- Os arquivos videos.bin e usuarios.bin sao criados automaticamente
-  na pasta onde o programa for executado, ao cadastrar o primeiro registro.
-- Para comecar com os dados zerados, apague videos.bin e usuarios.bin.
+   Linux / macOS / WSL:
+   ./streaming
+
+   Windows com MinGW:
+   streaming.exe
+
+Os arquivos videos.bin e usuarios.bin são criados automaticamente
+na pasta em que o programa é executado, quando os primeiros registros
+forem cadastrados.
+
+Para iniciar com os dados vazios, feche o programa e apague os arquivos
+videos.bin e usuarios.bin.
+
+Linux / macOS / WSL:
+   rm -f videos.bin usuarios.bin temp.bin
+
+Windows:
+   del videos.bin usuarios.bin temp.bin
+
+AVISO: os comandos acima apagam os registros cadastrados.

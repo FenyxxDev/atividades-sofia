@@ -4,8 +4,8 @@ COMANDOS PARA EXECUTAR O PROGRAMA
 Requisito: compilador GCC instalado (Linux, macOS, ou Windows com MinGW/WSL).
 
 1) Clonar o repositorio:
-   git clone <LINK_DO_SEU_REPOSITORIO>
-   cd <NOME_DA_PASTA>
+   git clone https://ubiquitous-waffle-5wq75xqrg9vcp4p.github.dev/
+   cd atividades-sofia
 
 2) Compilar:
    gcc -Wall -o streaming streaming.c
